@@ -17,7 +17,7 @@ contract test {
         return stateValue;
     }
     
-    function pureAccess() public pure returns (uint) {
-        return varConstantValue;
+    function pureAccess(uint a, uint b) public pure returns (uint) {
+        return a + b;
     }
 }
